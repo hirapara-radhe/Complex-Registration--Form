@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> complex registration</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table,
+        th,
+        td {
+            border: 1px black solid;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        table {
+            border: 3px solid;
+            width: 60vw;
+        }
+        tr{
+            background-color: #cbd8e4;
+        }
+        input,select,textarea{
+            background-color: #cbd8e4;
+            color: black;
+            }
+        input[type=submit],input[type=reset]{
+            background-color:#52AB98;
+            padding: 5PX;
+            margin: 5px;
+        }
+        
+        .tableHeading{
+            background-color: #2b6777;
+            height: 10px;
+        }
+        h2{
+            display: contents;
+            height: 0px;
+        }
+        h1{
+            display: contents;
+            align-items: center;
+        }
+        body{
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><center>Registration form</center></h1>
+    <table align="center">
+        <form action="">
+            <tr class="tableHeading" align="center">
+                <td colspan="2">
+                    <h2>Persnol Detail</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name*</td>
+                <td><input type="text" name="firstName" required></td>
+            </tr>
+            <tr>
+                <td>Last Name*</td>
+                <td><input type="text" name="lastName" required></td>
+            </tr>
+            <tr>
+                <td>Email*</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone number*</td>
+                <td><input type="number" size="10" name="phone" required></td>
+            </tr>
+            <tr class="tableHeading" align="center">
+                <td colspan="2">
+                    <h2>Account Detail</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>User Name*</td>
+                <td><input type="text" name="userName" required></td>
+            </tr>
+            <tr>
+                <td>Password*</td>
+                <td><input type="password" name="password" minlength="6" placeholder="Atleast contain 6 letter"
+                        required></td>
+            </tr>
+            <tr>
+                <td>Confirom Password*</td>
+                <td><input type="password" name="conpass" minlength="6" required></td>
+            </tr>
+            <tr class="tableHeading" align="center">
+                <td colspan="2">
+                    <h2>Address</h2>
+                </td>
+                </th>
+            <tr>
+                <td>Address Line 1*</td>
+                <td><input type="text" name="add1" required></td>
+            </tr>
+            <tr>
+                <td>Address Line 2*</td>
+                <td><input type="text" name="add2" required></td>
+            </tr>
+            <tr>
+                <td>City*</td>
+                <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><select name="state" id="">
+                        <option value="talangana">Telengana</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharasta">Maharasta</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>ZIP Code*</td>
+                <td><input type="number" name="zipcode" size="6" required></td>
+            </tr>
+            <tr class="tableHeading" align="center">
+                <td colspan="2">
+                    <h2>Preferences</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender*</td>
+                <td><input type="radio" name="Gender" value="Male" required><label for="Male">Male</label>
+                    <input type="radio" name="Gender" value="Male" required><label for="Female">Female</label>
+                    <input type="radio" name="Gender" value="Male" required><label for="Other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Subscribe to Newsletter </td>
+                <td><input type="checkbox" name="Subscribe"></td>
+            </tr>
+            <tr>
+                <td>Short Bio</td>
+                <td><textarea name="bio" cols="20" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="termAndConditon" required><label for="termAndConditon">I
+                        agree for Term and Condition*</label></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit"><input type="reset" value="Reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <br> <br>
+    <hr><br><br>
+   <center><div style="align-items: center;"> <h2>Terms and Condition</h2><br></div>
+    <iframe style="align-items: center;" src="/termsandconditon.html" frameborder="0" width="600">
+
+    </iframe></center>
+</body>
+
+</html>
